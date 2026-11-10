@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     west: document.getElementById('gaze-west'),
     nw: document.getElementById('gaze-nw'),
     smile: document.getElementById('gaze-smile'),
-    cry: document.getElementById('gaze-cry')
+    cry: document.getElementById('gaze-cry'),
+    scary: document.getElementById('gaze-scary')
   };
 
   let activeGazeKey = 'center';
@@ -61,12 +62,17 @@ document.addEventListener('DOMContentLoaded', () => {
       setActiveGaze('smile');
       if (dirVal) dirVal.textContent = 'SMILE 😄';
       if (hudModeText) hudModeText.textContent = 'HAPPY 😄';
-      showToast('Reaction: Happy & Ready to Code! 😄');
+      showToast('Reaction: TARA PALAG NA TOH!');
     } else if (clickCounter === 2) {
       setActiveGaze('cry');
       if (dirVal) dirVal.textContent = 'DEBUG 😭';
       if (hudModeText) hudModeText.textContent = 'DEBUGGING 😭';
-      showToast('Reaction: Debugging at 3 AM... 😭');
+      showToast('Reaction: AWIT MAY ERROR');
+    } else if (clickCounter === 3) {
+      setActiveGaze('scary');
+      if (dirVal) dirVal.textContent = 'SCARY 😱';
+      if (hudModeText) hudModeText.textContent = 'SCARY 😱';
+      showToast('Reaction: KATAKOT 😱');
     } else {
       isExpressionLocked = false;
       setActiveGaze('center');
