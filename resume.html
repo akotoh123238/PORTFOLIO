@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Carl M. Loyola - Resume / CV</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --primary: #BE185D;
+      --primary-dark: #9D174D;
+      --primary-light: #FCE7F3;
+      --text-dark: #1E293B;
+      --text-body: #334155;
+      --text-muted: #64748B;
+      --border-subtle: #E2E8F0;
+      --bg-page: #0D0D12;
+      --bg-paper: #FFFFFF;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    h1, h2, h3, h4,
+    .resume-name,
+    .section-title,
+    .entry-title,
+    .project-name,
+    .achievement-title,
+    .brand-link {
+      font-family: var(--font-heading);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-page);
+      color: var(--text-body);
+      line-height: 1.5;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 3rem;
+    }
+
+    /* Top Floating Action Bar (Hidden when printing) */
+    .action-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(13, 13, 18, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .action-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .brand-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #F9A8D4;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .brand-link:hover {
+      color: #FFFFFF;
+    }
+
+    .brand-link img {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+
+    .action-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-back {
+      background: rgba(255, 255, 255, 0.08);
+      color: #E2E8F0;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-back:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #F9A8D4, #F472B6, #EC4899);
+      color: #171019;
+      font-weight: 700;
+      box-shadow: 0 2px 12px rgba(244, 114, 182, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 18px rgba(244, 114, 182, 0.5);
+    }
+
+    .btn-print {
+      background: #FFFFFF;
+      color: #1E293B;
+      border-color: #E2E8F0;
+    }
+
+    .btn-print:hover {
+      background: #F1F5F9;
+      transform: translateY(-1px);
+    }
+
+    /* Paper Page Container */
+    .paper-container {
+      max-width: 850px;
+      margin: 2rem auto;
+      background: var(--bg-paper);
+      border-radius: 8px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+      padding: 2.75rem 3rem;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    /* Header Section */
+    .resume-header {
+      border-bottom: 2px solid var(--border-subtle);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .name-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .resume-name {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #0F172A;
+      line-height: 1.15;
+    }
+
+    .resume-tagline {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 0.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* Contact Links Strip */
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem 1.35rem;
+      margin-top: 0.85rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      color: var(--text-body);
+      font-weight: 500;
+    }
+
+    .contact-item i {
+      color: var(--primary);
+      font-size: 0.85rem;
+      width: 14px;
+      text-align: center;
+    }
+
+    .contact-item:hover {
+      color: var(--primary);
+    }
+
+    /* Section Component */
+    .resume-section {
+      margin-bottom: 1.35rem;
+    }
+
+    .section-title {
+      font-size: 0.825rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      margin-bottom: 0.65rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1.5px solid var(--border-subtle);
+    }
+
+    .section-title i {
+      font-size: 0.85rem;
+    }
+
+    /* Career Objective */
+    .objective-text {
+      color: var(--text-body);
+      font-size: 0.865rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    /* Work Experience & Education Items */
+    .entry-item {
+      margin-bottom: 0.95rem;
+    }
+
+    .entry-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .entry-title {
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    .entry-company {
+      font-size: 0.845rem;
+      font-weight: 600;
+      color: var(--text-body);
+    }
+
+    .entry-date {
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+      white-space: nowrap;
+    }
+
+    .entry-bullets {
+      list-style: none;
+      margin-top: 0.35rem;
+      padding-left: 0;
+    }
+
+    .entry-bullets li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.25rem;
+      font-size: 0.845rem;
+      color: var(--text-body);
+      line-height: 1.5;
+    }
+
+    .entry-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0.25rem;
+      top: 0;
+      color: var(--primary);
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    /* Project Cards / Entries */
+    .project-entry {
+      margin-bottom: 0.95rem;
+    }
+
+    .project-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .project-name {
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    .project-badge {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: var(--primary-light);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .project-tech {
+      font-size: 0.785rem;
+      font-weight: 600;
+      color: #475569;
+      margin-top: 0.15rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .project-desc {
+      font-size: 0.835rem;
+      color: var(--text-body);
+      line-height: 1.5;
+      margin-top: 0.25rem;
+    }
+
+    /* Skills Table / List */
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .skill-row {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.835rem;
+      line-height: 1.5;
+    }
+
+    .skill-cat-name {
+      min-width: 170px;
+      font-weight: 700;
+      color: #0F172A;
+      flex-shrink: 0;
+    }
+
+    .skill-cat-vals {
+      color: var(--text-body);
+    }
+
+    /* Achievements */
+    .achievement-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.65rem;
+      font-size: 0.845rem;
+    }
+
+    .achievement-item i {
+      color: #F59E0B;
+      font-size: 0.9rem;
+    }
+
+    .achievement-title {
+      font-weight: 700;
+      color: #0F172A;
+    }
+
+    .achievement-sub {
+      color: var(--text-muted);
+    }
+
+    /* PRINT STYLES */
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        padding: 0 !important;
+        font-size: 11pt !important;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .paper-container {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+
+      .resume-header {
+        border-bottom: 2px solid #CBD5E1 !important;
+      }
+
+      .section-title {
+        color: #9D174D !important;
+        border-bottom: 1.5px solid #CBD5E1 !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+
+      .project-badge {
+        background: #F1F5F9 !important;
+        color: #0F172A !important;
+        border: 1px solid #CBD5E1 !important;
+      }
+
+      @page {
+        margin: 12mm 15mm;
+        size: A4 portrait;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .paper-container {
+        padding: 1.75rem 1.25rem;
+        margin: 1rem;
+      }
+      .skill-row {
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+      .skill-cat-name {
+        min-width: unset;
+      }
+      .name-title-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar (hidden on print) -->
+  <header class="action-bar" aria-label="Resume Actions">
+    <div class="action-left">
+      <a href="index.html" class="brand-link" title="Back to Portfolio">
+        <img src="assets/images/logo.png" alt="Logo">
+        <span>John Carl Loyola</span>
+      </a>
+    </div>
+    <div class="action-right">
+      <a href="index.html" class="btn btn-back">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Back to Portfolio</span>
+      </a>
+      <button type="button" onclick="window.print()" class="btn btn-print">
+        <i class="fa-solid fa-print"></i>
+        <span>Print / Save as PDF</span>
+      </button>
+      <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-primary" id="download-pdf-btn">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        <span>Download PDF</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Printable Paper Resume Sheet -->
+  <main class="paper-container">
+    
+    <!-- Header -->
+    <header class="resume-header">
+      <div class="name-title-row">
+        <div>
+          <h1 class="resume-name">JOHN CARL M. LOYOLA</h1>
+          <p class="resume-tagline">Web Developer &bull; Computer Engineering Student &bull; AutoCAD Drafter</p>
+        </div>
+      </div>
+
+      <div class="contact-strip">
+        <span class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          Antipolo, Rizal, Philippines
+        </span>
+        <a href="tel:+639945851741" class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          +63 994 585 1741
+        </a>
+        <a href="mailto:loyolajohncarl8@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          loyolajohncarl8@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          linkedin.com/in/johncarlloyola
+        </a>
+      </div>
+    </header>
+
+    <!-- Career Objective -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-bullseye"></i> Career Objective</h2>
+      <p class="objective-text">
+        To join a collaborative development team as an entry-level Web Developer, where I can apply my background in programming and databases to create practical, high-quality web solutions. I am committed to continuous learning, sharpening my problem-solving skills, and delivering work that meets the needs of users and the organization.
+      </p>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+      
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Part-Time Office Assistant / AutoCAD Drafter</span>
+            <span class="entry-company">&bull; Project-Based</span>
+          </div>
+          <span class="entry-date">2025 &ndash; Present</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Organized and maintained company files, documents, and receipts for easy retrieval and record-keeping.</li>
+          <li>Prepared technical drawings, floor layouts, and schematics using AutoCAD.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Bachelor of Science in Computer Engineering</span>
+            <div class="entry-company">University of Rizal System &ndash; Antipolo Campus</div>
+          </div>
+          <span class="entry-date">Expected Graduation: 2027</span>
+        </div>
+      </div>
+
+      <div class="entry-item">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Accountancy, Business and Management (ABM)</span>
+            <div class="entry-company">Sumulong College of Arts and Sciences &ndash; Antipolo City</div>
+          </div>
+          <span class="entry-date">2021 &ndash; 2023</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-code"></i> Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-cat-name">Languages &amp; Web Tools:</span>
+          <span class="skill-cat-vals">JavaScript, HTML5, CSS3, C++, Python, React.js, Node.js, Tailwind CSS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat-name">Design &amp; CAD Tools:</span>
+          <span class="skill-cat-vals">AutoCAD (2D &amp; 3D Drafting), SketchUp (3D Spatial Modeling)</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat-name">Platforms &amp; Databases:</span>
+          <span class="skill-cat-vals">GitHub, MySQL, PostgreSQL, Firebase</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat-name">Core Competencies:</span>
+          <span class="skill-cat-vals">Front-End Development, Project Management, API Integration, Real-Time Systems, UI/UX Wireframing</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-cat-name">AI &amp; Dev Tools:</span>
+          <span class="skill-cat-vals">AI-Assisted Coding, Prompt Writing, AI-Assisted Debugging, AI-Assisted Research</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Experience -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-diagram-project"></i> Project Experience</h2>
+
+      <!-- URStamp -->
+      <div class="project-entry">
+        <div class="project-title-row">
+          <span class="project-name">URStamp: Event Management &amp; QR Attendance System</span>
+          <span class="project-badge">1st Place Award</span>
+        </div>
+        <p class="project-tech">React.js &bull; TypeScript &bull; Tailwind CSS &bull; Cloudflare Workers &bull; D1 (SQLite) &bull; Drizzle ORM</p>
+        <p class="project-desc">
+          Developed a centralized university event platform integrating department and program-based audiences, encrypted QR time-in/time-out scanning, and creator-only attendance reporting with PDF export, plus master-list management linking student records to registered accounts.
+        </p>
+      </div>
+
+      <!-- Microcontroller Cocktail Vending Machine -->
+      <div class="project-entry">
+        <div class="project-title-row">
+          <span class="project-name">Microcontroller Cocktail Vending Machine &ndash; Thesis Project</span>
+          <span class="project-badge">Hardware &amp; IoT</span>
+        </div>
+        <p class="project-tech">Arduino UNO &bull; Raspberry Pi &bull; Touchscreen &bull; Coin Acceptor &bull; Python &bull; AutoCAD</p>
+        <p class="project-desc">
+          Designed and built an automated cocktail dispensing machine controlled by microcontrollers, allowing users to select a drink and receive a precisely mixed cocktail without manual preparation. Integrated pumps, valves, sensors, and an interactive UI with CAD structural drafting.
+        </p>
+      </div>
+
+      <!-- JA1 Antipolo Church Management System -->
+      <div class="project-entry">
+        <div class="project-title-row">
+          <span class="project-name">JA1 Antipolo Church Management System</span>
+          <span class="project-badge">Full Stack Web</span>
+        </div>
+        <p class="project-tech">HTML5 &bull; CSS3 &bull; JavaScript &bull; Firebase</p>
+        <p class="project-desc">
+          Developed a church website and administrative portal featuring role-based Admin/Leader login, an interactive event calendar with calendar export, online member registration, ministry pages, and an integrated AI chatbot assistant for visitor inquiries.
+        </p>
+      </div>
+
+      <!-- Mang Inasal Self-Ordering Kiosk -->
+      <div class="project-entry">
+        <div class="project-title-row">
+          <span class="project-name">Mang Inasal Self-Ordering Kiosk System</span>
+          <span class="project-badge">Desktop Application</span>
+        </div>
+        <p class="project-tech">VB.Net &bull; Desktop UI &bull; Database Backend</p>
+        <p class="project-desc">
+          Developed a self-service ordering kiosk enabling customers to browse the menu, customize meal orders, and place orders independently, with an administrative back-office interface for item and queue management.
+        </p>
+      </div>
+
+      <!-- Wooden Bizarre Management System -->
+      <div class="project-entry">
+        <div class="project-title-row">
+          <span class="project-name">Wooden Bizarre Management System</span>
+          <span class="project-badge">Enterprise Web App</span>
+        </div>
+        <p class="project-tech">React.js &bull; PostgreSQL &bull; REST APIs</p>
+        <p class="project-desc">
+          Engineered a comprehensive business operations platform for order tracking, inventory records, employee attendance, and administrative oversight.
+        </p>
+      </div>
+    </section>
+
+    <!-- Academic Achievements -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-award"></i> Academic Achievements &amp; Awards</h2>
+      <div class="achievement-item">
+        <i class="fa-solid fa-trophy"></i>
+        <div>
+          <span class="achievement-title">System Making 1st Place &ndash; URStamp</span>
+          <span class="achievement-sub">(University of Rizal System, 2026)</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
