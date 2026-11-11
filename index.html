@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="John Carl M. Loyola - Personal Portfolio. Web developer passionate about building clean, responsive, and user-friendly websites.">
+  <meta name="author" content="John Carl M. Loyola">
+  <title>John Carl M. Loyola | Web Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/profile-1.jpg">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-logo" aria-label="John Carl M. Loyola Portfolio Home">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">John Carl<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#hero" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions (Theme Toggle & Contact CTA) -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get in Touch</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-nav-footer">
+        <a href="#contact" class="btn btn-primary btn-full">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section section">
+      <div class="container hero-container">
+        
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for projects &amp; opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">John Carl M. Loyola</span>
+            <span class="wave-emoji" aria-hidden="true">👋</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Web Developer &amp; Tech Enthusiast
+          </p>
+
+          <p class="hero-description">
+            I craft clean, responsive, and user-friendly websites with modern web technologies. 
+            Passionate about coding, continuous learning, and turning ideas into reality.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:johncarl.loyola@example.com" class="social-icon" aria-label="Email Me" title="johncarl.loyola@example.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Interactive HUD Tracker (Follows mouse in N, S, E, W, NW, NE, SE, SW + Click to rotate 3 photos) -->
+        <div class="hero-visual">
+          <div class="hud-outer-wrapper">
+            <div class="hud-portfolio-tag">PORTFOLIO — 2026</div>
+
+            <div class="hud-frame" id="hud-frame" role="button" tabindex="0" title="Click to rotate photo (1/3)" aria-label="Interactive ID-SYS Tracker - Click to change photo">
+              
+              <!-- Top HUD Details -->
+              <div class="hud-header">
+                <span class="hud-tag-eng">ENGINEERING // 01</span>
+                <div class="hud-tag-sys">
+                  <span class="hud-sys-title">ID-SYS</span>
+                  <span class="hud-sys-subtitle">SYSTEMS<br>IN MOTION</span>
+                </div>
+              </div>
+
+              <!-- Radar Circles & Tech Grid Background -->
+              <div class="hud-radar-layer" id="hud-radar">
+                <div class="radar-circle radar-c1"></div>
+                <div class="radar-circle radar-c2"></div>
+                <div class="radar-circle radar-c3"></div>
+                <div class="radar-crosshair-h"></div>
+                <div class="radar-crosshair-v"></div>
+                <div class="radar-grid-pattern"></div>
+              </div>
+
+              <!-- Subject Directional Photos (Tracks Mouse in N, NE, E, SE, S, SW, W, NW) -->
+              <div class="hud-photo-container" id="hud-photo-container">
+                <img src="assets/images/gaze-center.jpg" alt="John Carl M. Loyola - Center" class="hud-subject-img gaze-img gaze-center active" id="gaze-center">
+                <img src="assets/images/gaze-north.jpg" alt="John Carl M. Loyola - North" class="hud-subject-img gaze-img gaze-north" id="gaze-north">
+                <img src="assets/images/gaze-ne.jpg" alt="John Carl M. Loyola - North-East" class="hud-subject-img gaze-img gaze-ne" id="gaze-ne">
+                <img src="assets/images/gaze-east.jpg" alt="John Carl M. Loyola - East" class="hud-subject-img gaze-img gaze-east" id="gaze-east">
+                <img src="assets/images/gaze-se.jpg" alt="John Carl M. Loyola - South-East" class="hud-subject-img gaze-img gaze-se" id="gaze-se">
+                <img src="assets/images/gaze-south.jpg" alt="John Carl M. Loyola - South" class="hud-subject-img gaze-img gaze-south" id="gaze-south">
+                <img src="assets/images/gaze-sw.jpg" alt="John Carl M. Loyola - South-West" class="hud-subject-img gaze-img gaze-sw" id="gaze-sw">
+                <img src="assets/images/gaze-west.jpg" alt="John Carl M. Loyola - West" class="hud-subject-img gaze-img gaze-west" id="gaze-west">
+                <img src="assets/images/gaze-nw.jpg" alt="John Carl M. Loyola - North-West" class="hud-subject-img gaze-img gaze-nw" id="gaze-nw">
+                <!-- Reaction Easter Eggs -->
+                <img src="assets/images/profile-1.jpg" alt="John Carl M. Loyola - Smile" class="hud-subject-img gaze-img gaze-smile" id="gaze-smile">
+                <img src="assets/images/profile-3.jpg" alt="John Carl M. Loyola - Debugging" class="hud-subject-img gaze-img gaze-cry" id="gaze-cry">
+              </div>
+
+              <!-- Corner HUD Ticks -->
+              <div class="hud-corner hud-c-tl"></div>
+              <div class="hud-corner hud-c-tr"></div>
+              <div class="hud-corner hud-c-bl"></div>
+              <div class="hud-corner hud-c-br"></div>
+
+              <!-- Bottom Status Bar -->
+              <div class="hud-footer">
+                <div class="hud-dir-indicator">
+                  <span class="hud-pulse-dot"></span>
+                  <span class="hud-dir-label">GAZE:</span>
+                  <span class="hud-dir-val" id="hud-dir-val">CENTER</span>
+                </div>
+
+                <div class="hud-status-badge" id="hud-status-badge">
+                  <i class="fa-solid fa-crosshairs"></i>
+                  <span id="hud-mode-text">TRACKING ON</span>
+                </div>
+              </div>
+
+            </div>
+
+            <p class="click-tip">🎯 Move mouse to track (N, S, E, W, NW, NE...) • 🤏 Drag face to STRETCH!</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">A brief introduction about who I am and what I do</p>
+        </div>
+
+        <div class="about-card glass-card">
+          <div class="about-content">
+            <div class="about-text">
+              <h3 class="about-heading">Hello! I'm John Carl M. Loyola</h3>
+              <p class="about-p">
+                I am a dedicated web developer with a strong foundation in modern web technologies. 
+                I enjoy building interactive, accessible, and responsive applications that provide great user experiences across all devices.
+              </p>
+              <p class="about-p">
+                Always curious and enthusiastic about learning new frameworks, improving my problem-solving skills, and collaborating on exciting software projects.
+              </p>
+
+              <!-- Quick Info Grid -->
+              <div class="about-specs-grid">
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-solid fa-user"></i> Name:</span>
+                  <span class="spec-val">John Carl M. Loyola</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="spec-val">Philippines / Open to Remote</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
+                  <span class="spec-val">BS in Computer Science / IT</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                  <a href="mailto:johncarl.loyola@example.com" class="spec-val spec-link">johncarl.loyola@example.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Frontend -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h3>Frontend Development</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li><i class="fa-brands fa-html5"></i> HTML5</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
+              <li><i class="fa-brands fa-react"></i> React</li>
+              <li><i class="fa-solid fa-palette"></i> Responsive Design</li>
+              <li><i class="fa-solid fa-wand-magic-sparkles"></i> Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Backend & Database -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="cat-icon cyan"><i class="fa-solid fa-server"></i></div>
+              <h3>Backend &amp; Database</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li><i class="fa-brands fa-node"></i> Node.js</li>
+              <li><i class="fa-solid fa-network-wired"></i> Express.js</li>
+              <li><i class="fa-brands fa-python"></i> Python</li>
+              <li><i class="fa-solid fa-database"></i> SQL / MySQL</li>
+              <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
+              <li><i class="fa-solid fa-plug"></i> RESTful APIs</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Tools & Workflow -->
+          <div class="skill-category-card glass-card">
+            <div class="category-header">
+              <div class="cat-icon purple"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Tools &amp; Workflow</h3>
+            </div>
+            <ul class="skill-pills-list">
+              <li><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</li>
+              <li><i class="fa-solid fa-code"></i> VS Code</li>
+              <li><i class="fa-brands fa-figma"></i> Figma</li>
+              <li><i class="fa-solid fa-terminal"></i> Terminal / Bash</li>
+              <li><i class="fa-solid fa-vial-circle-check"></i> Debugging</li>
+              <li><i class="fa-solid fa-cloud-arrow-up"></i> Vercel / Netlify</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">A showcase of some projects I've built</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project1-nexus.svg" alt="Analytics Dashboard Project" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-desc">
+                A modern data visualization web app featuring interactive charts, real-time metrics tracking, and dark mode interface.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Chart.js</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Analytics Dashboard">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project2-aura.svg" alt="E-Commerce Storefront Project" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce Storefront</h3>
+              <p class="project-desc">
+                Clean and responsive online store with dynamic product catalog, shopping cart management, and seamless checkout flow.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>HTML5</span>
+                <span>CSS Grid</span>
+                <span>API</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="E-Commerce Storefront">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project3-pulse.svg" alt="Task Management App Project" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-desc">
+                Kanban-style project board to organize workflows, track tasks, and collaborate smoothly with clean intuitive UI.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Tailwind CSS</span>
+                <span>LocalStorage</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Task Management App">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have a question or want to work together? Send me a message!</p>
+        </div>
+
+        <div class="contact-card glass-card">
+          <div class="contact-grid">
+            
+            <!-- Contact Info -->
+            <div class="contact-info">
+              <h3 class="contact-subtitle">Contact Information</h3>
+              <p class="contact-text">
+                Feel free to reach out via email or send a message using the form. I'll get back to you as soon as possible!
+              </p>
+
+              <div class="contact-methods">
+                <div class="method-item">
+                  <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
+                  <div>
+                    <span class="method-label">Email</span>
+                    <a href="mailto:johncarl.loyola@example.com" class="method-value" id="email-address-text">johncarl.loyola@example.com</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon cyan"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <span class="method-label">Location</span>
+                    <span class="method-value">Philippines</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-socials">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:johncarl.loyola@example.com" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+              </div>
+            </div>
+
+            <!-- Simple Contact Form -->
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Maria Santos" required>
+                <span class="error-msg" id="name-error">Please enter your name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. maria@example.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Your Message</label>
+                <textarea id="form-message" name="message" class="form-input form-textarea" rows="4" placeholder="How can I help you?" required></textarea>
+                <span class="error-msg" id="message-error">Please enter your message.</span>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="alert"></div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright-text">
+        &copy; <span id="current-year">2026</span> <strong>John Carl M. Loyola</strong>. Built with HTML, CSS &amp; JavaScript.
+      </p>
+      <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top" title="Scroll back to top">
+        <span>Back to Top</span>
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

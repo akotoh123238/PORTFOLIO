@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="prodCard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="accentPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="12" fill="url(#auraBg)"/>
+  
+  <!-- Browser top bar -->
+  <rect width="600" height="36" fill="#1e293b" rx="12"/>
+  <rect y="24" width="600" height="12" fill="#1e293b"/>
+  <circle cx="20" cy="18" r="5" fill="#ef4444" />
+  <circle cx="36" cy="18" r="5" fill="#f59e0b" />
+  <circle cx="52" cy="18" r="5" fill="#10b981" />
+  <rect x="80" y="8" width="280" height="20" rx="6" fill="#0f172a" />
+  <text x="95" y="22" font-family="monospace" font-size="11" fill="#94a3b8">https://aura-store.shop</text>
+
+  <!-- Navbar inside site -->
+  <rect x="20" y="48" width="560" height="40" rx="8" fill="#111827" stroke="#334155" stroke-width="1"/>
+  <text x="36" y="73" font-family="sans-serif" font-size="14" font-weight="900" fill="#ec4899">AURA <tspan fill="#f8fafc">STORE</tspan></text>
+  <text x="160" y="72" font-family="sans-serif" font-size="11" fill="#94a3b8">New In</text>
+  <text x="220" y="72" font-family="sans-serif" font-size="11" fill="#94a3b8">Electronics</text>
+  <text x="300" y="72" font-family="sans-serif" font-size="11" fill="#94a3b8">Audio Gear</text>
+  <rect x="480" y="55" width="85" height="26" rx="13" fill="url(#accentPink)"/>
+  <text x="522" y="72" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Cart (3)</text>
+
+  <!-- Hero Banner inside site -->
+  <g transform="translate(20, 100)">
+    <rect width="560" height="110" rx="10" fill="#182234" stroke="#334155" stroke-width="1"/>
+    <text x="24" y="38" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f8fafc">Next-Gen Audio Experience</text>
+    <text x="24" y="60" font-family="sans-serif" font-size="12" fill="#94a3b8">Spatial sound, active noise cancellation, 40h battery</text>
+    <rect x="24" y="72" width="110" height="26" rx="6" fill="#6366f1"/>
+    <text x="79" y="89" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">Shop Now →</text>
+    
+    <!-- Decorative headphone graphic in hero banner -->
+    <circle cx="480" cy="55" r="40" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M455 55 C455 35, 505 35, 505 55" stroke="#ec4899" stroke-width="6" fill="none"/>
+    <rect x="450" y="50" width="10" height="18" rx="4" fill="#8b5cf6"/>
+    <rect x="500" y="50" width="10" height="18" rx="4" fill="#8b5cf6"/>
+  </g>
+
+  <!-- Product Grid 3 Items -->
+  <g transform="translate(20, 222)">
+    <!-- Card 1 -->
+    <rect width="175" height="142" rx="8" fill="url(#prodCard)" stroke="#334155" stroke-width="1"/>
+    <rect x="15" y="12" width="145" height="65" rx="6" fill="#111827"/>
+    <circle cx="87" cy="44" r="22" fill="#1e1b4b" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="87" y="50" font-family="sans-serif" font-size="18" fill="#38bdf8" text-anchor="middle">🎧</text>
+    <text x="15" y="96" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Aura ANC Pro</text>
+    <text x="15" y="112" font-family="sans-serif" font-size="11" fill="#ec4899" font-weight="bold">$249.00</text>
+    <rect x="105" y="100" width="55" height="24" rx="4" fill="#334155"/>
+    <text x="132" y="116" font-family="sans-serif" font-size="10" fill="#f8fafc" text-anchor="middle">Add +</text>
+
+    <!-- Card 2 -->
+    <g transform="translate(192, 0)">
+      <rect width="175" height="142" rx="8" fill="url(#prodCard)" stroke="#334155" stroke-width="1"/>
+      <rect x="15" y="12" width="145" height="65" rx="6" fill="#111827"/>
+      <circle cx="87" cy="44" r="22" fill="#1e1b4b" stroke="#ec4899" stroke-width="1.5"/>
+      <text x="87" y="50" font-family="sans-serif" font-size="18" fill="#f472b6" text-anchor="middle">⌚</text>
+      <text x="15" y="96" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Apex Smart Watch</text>
+      <text x="15" y="112" font-family="sans-serif" font-size="11" fill="#ec4899" font-weight="bold">$199.00</text>
+      <rect x="105" y="100" width="55" height="24" rx="4" fill="#334155"/>
+      <text x="132" y="116" font-family="sans-serif" font-size="10" fill="#f8fafc" text-anchor="middle">Add +</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(385, 0)">
+      <rect width="175" height="142" rx="8" fill="url(#prodCard)" stroke="#334155" stroke-width="1"/>
+      <rect x="15" y="12" width="145" height="65" rx="6" fill="#111827"/>
+      <circle cx="87" cy="44" r="22" fill="#1e1b4b" stroke="#10b981" stroke-width="1.5"/>
+      <text x="87" y="50" font-family="sans-serif" font-size="18" fill="#34d399" text-anchor="middle">⌨️</text>
+      <text x="15" y="96" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Matrix Mechanical</text>
+      <text x="15" y="112" font-family="sans-serif" font-size="11" fill="#ec4899" font-weight="bold">$159.00</text>
+      <rect x="105" y="100" width="55" height="24" rx="4" fill="#334155"/>
+      <text x="132" y="116" font-family="sans-serif" font-size="10" fill="#f8fafc" text-anchor="middle">Add +</text>
+    </g>
+  </g>
+</svg>

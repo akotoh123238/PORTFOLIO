@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="12" fill="url(#pBg)"/>
+  
+  <!-- Browser top bar -->
+  <rect width="600" height="36" fill="#1e293b" rx="12"/>
+  <rect y="24" width="600" height="12" fill="#1e293b"/>
+  <circle cx="20" cy="18" r="5" fill="#ef4444" />
+  <circle cx="36" cy="18" r="5" fill="#f59e0b" />
+  <circle cx="52" cy="18" r="5" fill="#10b981" />
+  <rect x="80" y="8" width="280" height="20" rx="6" fill="#0f172a" />
+  <text x="95" y="22" font-family="monospace" font-size="11" fill="#94a3b8">https://pulse-sync.dev/sprint-42</text>
+
+  <!-- Workspace Subheader -->
+  <rect x="20" y="46" width="560" height="36" rx="6" fill="#1e293b"/>
+  <text x="36" y="69" font-family="sans-serif" font-size="13" font-weight="bold" fill="#f8fafc">Sprint 42: Production Release</text>
+  <rect x="235" y="54" width="65" height="20" rx="10" fill="#312e81"/>
+  <text x="267" y="68" font-family="sans-serif" font-size="10" fill="#a5b4fc" text-anchor="middle">ACTIVE</text>
+  
+  <!-- Active Team Avatars -->
+  <circle cx="480" cy="64" r="10" fill="#6366f1"/>
+  <circle cx="500" cy="64" r="10" fill="#06b6d4"/>
+  <circle cx="520" cy="64" r="10" fill="#10b981"/>
+  <circle cx="540" cy="64" r="10" fill="#ec4899"/>
+  <text x="560" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">+5</text>
+
+  <!-- 3 Kanban Columns -->
+  <!-- Col 1: To Do -->
+  <g transform="translate(20, 92)">
+    <rect width="175" height="270" rx="8" fill="#161f30" stroke="#1f293d" stroke-width="1"/>
+    <text x="14" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">TO DO (4)</text>
+    <line x1="14" y1="34" x2="161" y2="34" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Card A -->
+    <rect x="10" y="44" width="155" height="66" rx="6" fill="#1e293b"/>
+    <rect x="18" y="54" width="45" height="14" rx="3" fill="#ef4444" opacity="0.2"/>
+    <text x="40" y="64" font-family="sans-serif" font-size="8" fill="#f87171" font-weight="bold" text-anchor="middle">CRITICAL</text>
+    <text x="18" y="82" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">Refactor Auth Tokens</text>
+    <rect x="18" y="94" width="70" height="4" rx="2" fill="#475569"/>
+
+    <!-- Card B -->
+    <rect x="10" y="118" width="155" height="66" rx="6" fill="#1e293b"/>
+    <rect x="18" y="128" width="40" height="14" rx="3" fill="#f59e0b" opacity="0.2"/>
+    <text x="38" y="138" font-family="sans-serif" font-size="8" fill="#fbbf24" font-weight="bold" text-anchor="middle">API</text>
+    <text x="18" y="156" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">Rate Limiter Hook</text>
+    <rect x="18" y="168" width="90" height="4" rx="2" fill="#475569"/>
+  </g>
+
+  <!-- Col 2: In Progress -->
+  <g transform="translate(212, 92)">
+    <rect width="175" height="270" rx="8" fill="#161f30" stroke="#1f293d" stroke-width="1"/>
+    <text x="14" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">IN PROGRESS (3)</text>
+    <line x1="14" y1="34" x2="161" y2="34" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Card C -->
+    <rect x="10" y="44" width="155" height="74" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="18" y="54" width="50" height="14" rx="3" fill="#6366f1" opacity="0.3"/>
+    <text x="43" y="64" font-family="sans-serif" font-size="8" fill="#a5b4fc" font-weight="bold" text-anchor="middle">SOCKETS</text>
+    <text x="18" y="82" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">Live Presence Sync</text>
+    <!-- Progress Bar -->
+    <rect x="18" y="96" width="115" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="96" width="85" height="6" rx="3" fill="#6366f1"/>
+    <circle cx="150" cy="100" r="7" fill="#06b6d4"/>
+
+    <!-- Card D -->
+    <rect x="10" y="126" width="155" height="66" rx="6" fill="#1e293b"/>
+    <rect x="18" y="136" width="45" height="14" rx="3" fill="#10b981" opacity="0.2"/>
+    <text x="40" y="146" font-family="sans-serif" font-size="8" fill="#34d399" font-weight="bold" text-anchor="middle">FEATURE</text>
+    <text x="18" y="164" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">Export PDF Reports</text>
+    <rect x="18" y="176" width="60" height="4" rx="2" fill="#475569"/>
+  </g>
+
+  <!-- Col 3: Done -->
+  <g transform="translate(405, 92)">
+    <rect width="175" height="270" rx="8" fill="#161f30" stroke="#1f293d" stroke-width="1"/>
+    <text x="14" y="24" font-family="sans-serif" font-size="12" font-weight="bold" fill="#34d399">DONE (12)</text>
+    <line x1="14" y1="34" x2="161" y2="34" stroke="#334155" stroke-width="1"/>
+    
+    <!-- Card E -->
+    <rect x="10" y="44" width="155" height="66" rx="6" fill="#1e293b"/>
+    <text x="18" y="65" font-family="sans-serif" font-size="10" fill="#10b981">✓ Completed</text>
+    <text x="18" y="82" font-family="sans-serif" font-size="11" fill="#cbd5e1" font-weight="500">Dark Mode Palette</text>
+    <rect x="18" y="94" width="80" height="4" rx="2" fill="#475569"/>
+
+    <!-- Card F -->
+    <rect x="10" y="118" width="155" height="66" rx="6" fill="#1e293b"/>
+    <text x="18" y="139" font-family="sans-serif" font-size="10" fill="#10b981">✓ Completed</text>
+    <text x="18" y="156" font-family="sans-serif" font-size="11" fill="#cbd5e1" font-weight="500">S3 Asset Pipeline</text>
+    <rect x="18" y="168" width="100" height="4" rx="2" fill="#475569"/>
+  </g>
+</svg>
