@@ -7,17 +7,17 @@
   <meta name="author" content="John Carl M. Loyola">
   <title>John Carl M. Loyola | Web Developer</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Space Grotesk (Headings), Inter (Body), JetBrains Mono (Tech/HUD) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/jpeg" href="assets/images/profile-1.jpg">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
 
@@ -30,9 +30,9 @@
 
   <!-- Navigation Bar -->
   <header class="navbar-wrapper" id="header">
-    <nav class="navbar container" aria-label="Main Navigation">
+    <nav class="navbar" aria-label="Main Navigation">
       <a href="#hero" class="nav-logo" aria-label="John Carl M. Loyola Portfolio Home">
-        <span class="logo-symbol">&lt;/&gt;</span>
+        <img src="assets/images/logo.png" alt="JCL Logo" class="logo-img">
         <span class="logo-text">John Carl<span class="gradient-text">.dev</span></span>
       </a>
 
@@ -43,10 +43,15 @@
         <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
         <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
         <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        <li role="none"><a href="resume.html" target="_blank" class="nav-link nav-resume-link" role="menuitem"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
       </ul>
 
       <!-- Nav Actions (Theme Toggle & Contact CTA) -->
       <div class="nav-actions">
+        <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-resume btn-sm nav-resume-cta" title="Download CV (PDF)">
+          <i class="fa-solid fa-download"></i> <span>CV</span>
+        </a>
+
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
           <i class="fa-solid fa-moon moon-icon"></i>
           <i class="fa-solid fa-sun sun-icon"></i>
@@ -71,6 +76,8 @@
         <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
         <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
         <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="resume.html" target="_blank" class="mobile-nav-link"><i class="fa-solid fa-file-lines"></i> Resume / CV</a></li>
+        <li><a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="mobile-nav-link"><i class="fa-solid fa-file-arrow-down"></i> Download PDF Resume</a></li>
       </ul>
       <div class="mobile-nav-footer">
         <a href="#contact" class="btn btn-primary btn-full">Contact Me</a>
@@ -86,10 +93,6 @@
         
         <!-- Hero Text -->
         <div class="hero-content">
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span>Available for projects &amp; opportunities</span>
-          </div>
 
           <h1 class="hero-title">
             Hi, I'm <span class="gradient-text">John Carl M. Loyola</span>
@@ -97,18 +100,21 @@
           </h1>
 
           <p class="hero-subtitle">
-            Web Developer &amp; Tech Enthusiast
+            Web Developer &amp; AutoCAD 
           </p>
 
           <p class="hero-description">
-            I craft clean, responsive, and user-friendly websites with modern web technologies. 
-            Passionate about coding, continuous learning, and turning ideas into reality.
+            Entry-level Web Developer and Computer Engineering student skilled in modern web frameworks, databases, and AutoCAD drafting. Focused on delivering practical, high-quality solutions.
           </p>
 
           <div class="hero-cta-group">
             <a href="#projects" class="btn btn-primary">
-              <span>View My Projects</span>
+              <span>View Projects</span>
               <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-resume" id="hero-download-resume" title="Download John Carl's Resume (PDF)">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
             </a>
             <a href="#contact" class="btn btn-secondary">
               <span>Contact Me</span>
@@ -121,10 +127,13 @@
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+            <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="linkedin.com/in/johncarlloyola">
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="mailto:johncarl.loyola@example.com" class="social-icon" aria-label="Email Me" title="johncarl.loyola@example.com">
+            <a href="tel:+639945851741" class="social-icon" aria-label="Phone" title="+63 994 585 1741">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="mailto:loyolajohncarl8@gmail.com" class="social-icon" aria-label="Email Me" title="loyolajohncarl8@gmail.com">
               <i class="fa-regular fa-envelope"></i>
             </a>
           </div>
@@ -139,7 +148,7 @@
               
               <!-- Top HUD Details -->
               <div class="hud-header">
-                <span class="hud-tag-eng">ENGINEERING // 01</span>
+                <span class="hud-tag-eng">COMPUTER ENGINEERING </span>
                 <div class="hud-tag-sys">
                   <span class="hud-sys-title">ID-SYS</span>
                   <span class="hud-sys-subtitle">SYSTEMS<br>IN MOTION</span>
@@ -161,7 +170,7 @@
                 <img src="assets/images/neutral.png" alt="John Carl M. Loyola - Center" class="hud-subject-img gaze-img gaze-center active" id="gaze-center">
                 <img src="assets/images/n.png" alt="John Carl M. Loyola - North" class="hud-subject-img gaze-img gaze-north" id="gaze-north">
                 <img src="assets/images/ne.png" alt="John Carl M. Loyola - North-East" class="hud-subject-img gaze-img gaze-ne" id="gaze-ne">
-                <img src="assets/images/east.png" alt="John Carl M. Loyola - East" class="hud-subject-img gaze-img gaze-east" id="gaze-east">
+                <img src="assets/images/e.png" alt="John Carl M. Loyola - East" class="hud-subject-img gaze-img gaze-east" id="gaze-east">
                 <img src="assets/images/se.png" alt="John Carl M. Loyola - South-East" class="hud-subject-img gaze-img gaze-se" id="gaze-se">
                 <img src="assets/images/s.png" alt="John Carl M. Loyola - South" class="hud-subject-img gaze-img gaze-south" id="gaze-south">
                 <img src="assets/images/sw.png" alt="John Carl M. Loyola - South-West" class="hud-subject-img gaze-img gaze-sw" id="gaze-sw">
@@ -171,6 +180,11 @@
                 <img src="assets/images/happy.png" alt="John Carl M. Loyola - Smile" class="hud-subject-img gaze-img gaze-smile" id="gaze-smile">
                 <img src="assets/images/sad.png" alt="John Carl M. Loyola - Debugging" class="hud-subject-img gaze-img gaze-cry" id="gaze-cry">
                 <img src="assets/images/scary.png" alt="John Carl M. Loyola - Scary" class="hud-subject-img gaze-img gaze-scary" id="gaze-scary">
+
+                <!-- Head-only stretch layer: a clone of the active photo, clipped to the head, that gets deformed while the body stays still -->
+                <div class="hud-face-stretch" id="hud-face-stretch" aria-hidden="true">
+                  <img src="assets/images/neutral.png" alt="" class="face-clone" id="face-clone">
+                </div>
               </div>
 
               <!-- Corner HUD Ticks -->
@@ -195,7 +209,7 @@
 
             </div>
 
-            <p class="click-tip">🎯 Move mouse to track (N, S, E, W, NW, NE...) • 🤏 Drag face to STRETCH!</p>
+            <p class="click-tip">Move mouse to track • Click face for reactions (Smile, Debug, Scary) • Drag to STRETCH!</p>
           </div>
         </div>
 
@@ -217,11 +231,10 @@
             <div class="about-text">
               <h3 class="about-heading">Hello! I'm John Carl M. Loyola</h3>
               <p class="about-p">
-                I am a dedicated web developer with a strong foundation in modern web technologies. 
-                I enjoy building interactive, accessible, and responsive applications that provide great user experiences across all devices.
+                I am an entry-level Web Developer and Computer Engineering student at the University of Rizal System – Antipolo Campus. I combine hands-on experience in modern programming and databases with practical design and AutoCAD drafting skills to build reliable, high-quality digital solutions.
               </p>
               <p class="about-p">
-                Always curious and enthusiastic about learning new frameworks, improving my problem-solving skills, and collaborating on exciting software projects.
+                I am committed to continuous learning, sharpening my algorithmic problem-solving, and collaborating closely with development teams to create software and embedded systems that genuinely solve user and organizational challenges.
               </p>
 
               <!-- Quick Info Grid -->
@@ -232,16 +245,113 @@
                 </div>
                 <div class="spec-item">
                   <span class="spec-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
-                  <span class="spec-val">Philippines / Open to Remote</span>
+                  <span class="spec-val">Antipolo, Rizal, Philippines</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                  <a href="tel:+639945851741" class="spec-val spec-link">+63 994 585 1741</a>
                 </div>
                 <div class="spec-item">
                   <span class="spec-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
-                  <span class="spec-val">BS in Computer Science / IT</span>
+                  <span class="spec-val">BS Computer Engineering (Expected 2027)</span>
                 </div>
                 <div class="spec-item">
                   <span class="spec-label"><i class="fa-solid fa-envelope"></i> Email:</span>
-                  <a href="mailto:johncarl.loyola@example.com" class="spec-val spec-link">johncarl.loyola@example.com</a>
+                  <a href="mailto:loyolajohncarl8@gmail.com" class="spec-val spec-link">loyolajohncarl8@gmail.com</a>
                 </div>
+                <div class="spec-item">
+                  <span class="spec-label"><i class="fa-brands fa-linkedin"></i> LinkedIn:</span>
+                  <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="spec-val spec-link">linkedin.com/in/johncarlloyola</a>
+                </div>
+              </div>
+
+              <!-- Resume Download Action Banner -->
+              <div class="about-resume-cta">
+                <div class="resume-cta-info">
+                  <div class="resume-cta-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                  <div>
+                    <h4 class="resume-cta-title">Curriculum Vitae / Resume</h4>
+                    <p class="resume-cta-desc">Comprehensive CV with work experience, project awards, tech stack &amp; CAD drafting credentials.</p>
+                  </div>
+                </div>
+                <div class="resume-cta-actions">
+                  <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-primary btn-sm" title="Download Official PDF Resume">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download PDF
+                  </a>
+                  <a href="assets/docs/John_Carl_Loyola_Resume.docx" download="John_Carl_Loyola_Resume.docx" class="btn btn-secondary btn-sm" title="Download Word Document">
+                    <i class="fa-solid fa-file-word"></i> Word (.docx)
+                  </a>
+                  <a href="resume.html" target="_blank" class="btn btn-secondary btn-sm" title="Open Clean Printable Resume Sheet">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educational Background Timeline Grid -->
+        <div class="education-block">
+          <div class="education-header">
+            <span class="edu-pill"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+            <h3 class="education-heading">Educational <span class="gradient-text">Background</span></h3>
+            <p class="education-desc">From elementary foundations up to my current college studies</p>
+          </div>
+
+          <div class="education-grid">
+            <!-- 1. College (Current) -->
+            <div class="edu-card glass-card is-current">
+              <div class="edu-card-top">
+                <span class="edu-tag tag-college"><i class="fa-solid fa-building-columns"></i> College / Tertiary</span>
+                <span class="edu-status-badge status-active"><span class="pulse-dot"></span> Currently In College</span>
+              </div>
+              <h4 class="edu-school-name">UNIVERSITY OF RIZAL SYSTEM &ndash; ANTIPOLO CAMPUS</h4>
+              <p class="edu-degree-text">Bachelor of Science in Computer Engineering</p>
+              <div class="edu-card-meta">
+                <span><i class="fa-regular fa-clock"></i> Expected Graduation: 2027</span>
+                <span><i class="fa-solid fa-location-dot"></i> Antipolo, Rizal</span>
+              </div>
+            </div>
+
+            <!-- 2. Senior High School (Graduated) -->
+            <div class="edu-card glass-card">
+              <div class="edu-card-top">
+                <span class="edu-tag"><i class="fa-solid fa-school"></i> Senior High School</span>
+                <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
+              </div>
+              <h4 class="edu-school-name">SUMULONG COLLEGE OF ARTS AND SCIENCES &ndash; ANTIPOLO CITY</h4>
+              <p class="edu-degree-text">Accountancy, Business and Management (ABM)</p>
+              <div class="edu-card-meta">
+                <span><i class="fa-regular fa-calendar-check"></i> 2021 &ndash; 2023</span>
+                <span><i class="fa-solid fa-location-dot"></i> Antipolo City</span>
+              </div>
+            </div>
+
+            <!-- 3. Junior High School (Graduated) -->
+            <div class="edu-card glass-card">
+              <div class="edu-card-top">
+                <span class="edu-tag"><i class="fa-solid fa-book-open"></i>Junior High School</span>
+                <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
+              </div>
+              <h4 class="edu-school-name">ROCKFORT CHRISTIAN ACADEMY</h4>
+              <p class="edu-degree-text">Secondary Education Curriculum</p>
+              <div class="edu-card-meta">
+                <span><i class="fa-regular fa-calendar-check"></i> Completed (Grade 7 - 10)</span>
+                <span><i class="fa-solid fa-location-dot"></i> Philippines</span>
+              </div>
+            </div>
+
+            <!-- 4. Elementary (Graduated) -->
+            <div class="edu-card glass-card">
+              <div class="edu-card-top">
+                <span class="edu-tag"><i class="fa-solid fa-children"></i> Elementary School</span>
+                <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
+              </div>
+              <h4 class="edu-school-name">ISAIAS S. TAPALES ELEMENTARY SCHOOL</h4>
+              <p class="edu-degree-text">Primary Basic Education</p>
+              <div class="edu-card-meta">
+                <span><i class="fa-regular fa-calendar-check"></i> Completed (Grade 1 - 6)</span>
+                <span><i class="fa-solid fa-location-dot"></i> Philippines</span>
               </div>
             </div>
           </div>
@@ -256,58 +366,323 @@
       <div class="container">
         
         <div class="section-header">
+          <span class="skills-eyebrow"><i class="fa-solid fa-microchip"></i> Capabilities &amp; Tech Stack</span>
           <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
-          <p class="section-subtitle">Technologies and tools I work with</p>
+          <p class="section-subtitle">Web development, computer engineering design, and modern production tools</p>
         </div>
 
-        <div class="skills-grid">
+        <!-- Category Filter Tabs -->
+        <div class="skills-filters" role="tablist" aria-label="Skills Category Filter">
+          <button type="button" class="skills-filter-btn" data-filter="frontend" role="tab" aria-selected="false">
+            <i class="fa-solid fa-laptop-code"></i> Frontend
+          </button>
+          <button type="button" class="skills-filter-btn" data-filter="backend" role="tab" aria-selected="false">
+            <i class="fa-solid fa-server"></i> Backend &amp; DB
+          </button>
+          <button type="button" class="skills-filter-btn highlight-cad" data-filter="cad" role="tab" aria-selected="false">
+            <i class="fa-solid fa-compass-drafting"></i> Engineering &amp; CAD
+          </button>
+          <button type="button" class="skills-filter-btn" data-filter="tools" role="tab" aria-selected="false">
+            <i class="fa-solid fa-toolbox"></i> Tools &amp; Workflow
+          </button>
+          <button type="button" class="skills-filter-btn btn-all" data-filter="all" role="tab" aria-selected="false">
+            <i class="fa-solid fa-shapes"></i> View All <span class="tab-count">24</span>
+          </button>
+        </div>
+
+        <!-- Initial Click Prompt (Hidden once a category is clicked) -->
+        <div class="skills-empty-state" id="skills-empty-state">
+          <div class="empty-icon-pulse">
+            <i class="fa-solid fa-arrow-pointer"></i>
+          </div>
+          <p class="empty-title">Click a category above to view my skills</p>
+          <p class="empty-sub">Choose Frontend, Backend, Engineering &amp; CAD, or Tools to reveal technologies on demand</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
           
           <!-- Category 1: Frontend -->
-          <div class="skill-category-card glass-card">
+          <div class="skill-category-card glass-card" data-category="frontend">
             <div class="category-header">
-              <div class="cat-icon"><i class="fa-solid fa-laptop-code"></i></div>
-              <h3>Frontend Development</h3>
+              <div class="cat-icon pink"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="cat-title-group">
+                <span class="cat-tag">SYS // 01</span>
+                <h3>Frontend Development</h3>
+              </div>
+              <span class="cat-count">6 Techs</span>
+              <button type="button" class="card-close-btn" aria-label="Hide category" title="Hide this category">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
-            <ul class="skill-pills-list">
-              <li><i class="fa-brands fa-html5"></i> HTML5</li>
-              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
-              <li><i class="fa-brands fa-js"></i> JavaScript (ES6+)</li>
-              <li><i class="fa-brands fa-react"></i> React</li>
-              <li><i class="fa-solid fa-palette"></i> Responsive Design</li>
-              <li><i class="fa-solid fa-wand-magic-sparkles"></i> Tailwind CSS</li>
-            </ul>
+            
+            <div class="tech-tiles-grid">
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-html5"><i class="fa-brands fa-html5"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">HTML5</span>
+                  <span class="tech-sub">Semantic Structure</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-css3"><i class="fa-brands fa-css3-alt"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">CSS3</span>
+                  <span class="tech-sub">Flexbox, Grid &amp; FX</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-js"><i class="fa-brands fa-js"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">JavaScript</span>
+                  <span class="tech-sub">ES6+, DOM &amp; Async</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-react"><i class="fa-brands fa-react"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">React</span>
+                  <span class="tech-sub">Components &amp; Hooks</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-tailwind"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Tailwind CSS</span>
+                  <span class="tech-sub">Utility-First Styling</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-responsive"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Responsive Design</span>
+                  <span class="tech-sub">Cross-Device UX</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+            </div>
           </div>
 
           <!-- Category 2: Backend & Database -->
-          <div class="skill-category-card glass-card">
+          <div class="skill-category-card glass-card" data-category="backend">
             <div class="category-header">
               <div class="cat-icon cyan"><i class="fa-solid fa-server"></i></div>
-              <h3>Backend &amp; Database</h3>
+              <div class="cat-title-group">
+                <span class="cat-tag">SYS // 02</span>
+                <h3>Backend &amp; Database</h3>
+              </div>
+              <span class="cat-count">6 Techs</span>
+              <button type="button" class="card-close-btn" aria-label="Hide category" title="Hide this category">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
-            <ul class="skill-pills-list">
-              <li><i class="fa-brands fa-node"></i> Node.js</li>
-              <li><i class="fa-solid fa-network-wired"></i> Express.js</li>
-              <li><i class="fa-brands fa-python"></i> Python</li>
-              <li><i class="fa-solid fa-database"></i> SQL / MySQL</li>
-              <li><i class="fa-solid fa-leaf"></i> MongoDB</li>
-              <li><i class="fa-solid fa-plug"></i> RESTful APIs</li>
-            </ul>
+
+            <div class="tech-tiles-grid">
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-node"><i class="fa-brands fa-node"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Node.js</span>
+                  <span class="tech-sub">Runtime Environment</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-express"><i class="fa-solid fa-network-wired"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Express.js</span>
+                  <span class="tech-sub">Routing &amp; Middleware</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-python"><i class="fa-brands fa-python"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Python</span>
+                  <span class="tech-sub">Backend &amp; Scripting</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-mysql"><i class="fa-solid fa-database"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">SQL / MySQL</span>
+                  <span class="tech-sub">Relational Database</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-mongo"><i class="fa-solid fa-leaf"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">MongoDB</span>
+                  <span class="tech-sub">NoSQL Documents</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-api"><i class="fa-solid fa-plug"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">RESTful APIs</span>
+                  <span class="tech-sub">CRUD &amp; Integrations</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Category 3: Tools & Workflow -->
-          <div class="skill-category-card glass-card">
+          <!-- Category 3: Engineering & CAD -->
+          <div class="skill-category-card glass-card is-cad-card" data-category="cad">
+            <div class="category-header">
+              <div class="cat-icon amber"><i class="fa-solid fa-compass-drafting"></i></div>
+              <div class="cat-title-group">
+                <span class="cat-tag tag-cad">SYS // 03 • ENG</span>
+                <h3>Engineering &amp; CAD</h3>
+              </div>
+              <span class="cat-count">6 Techs</span>
+              <button type="button" class="card-close-btn" aria-label="Hide category" title="Hide this category">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <div class="tech-tiles-grid">
+              <div class="tech-tile highlight-tile">
+                <div class="tech-icon-box icon-autocad"><i class="fa-solid fa-compass-drafting"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">AutoCAD</span>
+                  <span class="tech-sub">2D &amp; 3D Drafting</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+
+              <div class="tech-tile highlight-tile">
+                <div class="tech-icon-box icon-sketchup"><i class="fa-solid fa-cube"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">SketchUp</span>
+                  <span class="tech-sub">3D Spatial Modeling</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-drafting"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">2D Drafting</span>
+                  <span class="tech-sub">Schematics &amp; Blueprints</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-3d"><i class="fa-solid fa-shapes"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">3D Modeling</span>
+                  <span class="tech-sub">Volumetric Renders</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-drawings"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Technical Drawings</span>
+                  <span class="tech-sub">Engineering Standards</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-floorplan"><i class="fa-solid fa-pen-ruler"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Floor Plans &amp; Layouts</span>
+                  <span class="tech-sub">Space &amp; Scale Planning</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Workflow -->
+          <div class="skill-category-card glass-card" data-category="tools">
             <div class="category-header">
               <div class="cat-icon purple"><i class="fa-solid fa-toolbox"></i></div>
-              <h3>Tools &amp; Workflow</h3>
+              <div class="cat-title-group">
+                <span class="cat-tag">SYS // 04</span>
+                <h3>Tools &amp; Workflow</h3>
+              </div>
+              <span class="cat-count">6 Techs</span>
+              <button type="button" class="card-close-btn" aria-label="Hide category" title="Hide this category">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
             </div>
-            <ul class="skill-pills-list">
-              <li><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</li>
-              <li><i class="fa-solid fa-code"></i> VS Code</li>
-              <li><i class="fa-brands fa-figma"></i> Figma</li>
-              <li><i class="fa-solid fa-terminal"></i> Terminal / Bash</li>
-              <li><i class="fa-solid fa-vial-circle-check"></i> Debugging</li>
-              <li><i class="fa-solid fa-cloud-arrow-up"></i> Vercel / Netlify</li>
-            </ul>
+
+            <div class="tech-tiles-grid">
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-git"><i class="fa-brands fa-git-alt"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Git &amp; GitHub</span>
+                  <span class="tech-sub">Version Control &amp; PRs</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-vscode"><i class="fa-solid fa-code"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">VS Code</span>
+                  <span class="tech-sub">IDE &amp; Workspace Tools</span>
+                </div>
+                <span class="tech-level-badge core">Core</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-figma"><i class="fa-brands fa-figma"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Figma</span>
+                  <span class="tech-sub">UI/UX &amp; Prototyping</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-terminal"><i class="fa-solid fa-terminal"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Terminal / CLI</span>
+                  <span class="tech-sub">Shell Commands &amp; Scripts</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-debug"><i class="fa-solid fa-vial-circle-check"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Debugging</span>
+                  <span class="tech-sub">Chrome DevTools &amp; Tests</span>
+                </div>
+                <span class="tech-level-badge advanced">Advanced</span>
+              </div>
+
+              <div class="tech-tile">
+                <div class="tech-icon-box icon-deploy"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                <div class="tech-details">
+                  <span class="tech-name">Vercel &amp; Netlify</span>
+                  <span class="tech-sub">Continuous Deployment</span>
+                </div>
+                <span class="tech-level-badge proficient">Proficient</span>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -327,80 +702,145 @@
 
         <div class="projects-grid">
 
-          <!-- Project 1 -->
+          <!-- Project 1: URStamp -->
           <div class="project-card glass-card">
             <div class="project-media">
-              <img src="assets/images/project1-nexus.svg" alt="Analytics Dashboard Project" loading="lazy">
+              <img src="assets/images/project1-nexus.svg" alt="URStamp Event and QR Attendance System" loading="lazy">
             </div>
             <div class="project-body">
-              <h3 class="project-title">Analytics Dashboard</h3>
+              <span class="project-award-badge"><i class="fa-solid fa-trophy"></i> 1st Place &bull; System Making 2026</span>
+              <h3 class="project-title">URStamp: QR Attendance System</h3>
               <p class="project-desc">
-                A modern data visualization web app featuring interactive charts, real-time metrics tracking, and dark mode interface.
+                Centralized university event management platform featuring department and program-based audience targeting, encrypted QR time-in/time-out scanning, and creator-only attendance PDF reports.
               </p>
               <div class="project-tags">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Chart.js</span>
-                <span>CSS3</span>
-              </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Analytics Dashboard">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project2-aura.svg" alt="E-Commerce Storefront Project" loading="lazy">
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">E-Commerce Storefront</h3>
-              <p class="project-desc">
-                Clean and responsive online store with dynamic product catalog, shopping cart management, and seamless checkout flow.
-              </p>
-              <div class="project-tags">
-                <span>JavaScript</span>
-                <span>HTML5</span>
-                <span>CSS Grid</span>
-                <span>API</span>
-              </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="E-Commerce Storefront">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
-                </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project3-pulse.svg" alt="Task Management App Project" loading="lazy">
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">Task Management App</h3>
-              <p class="project-desc">
-                Kanban-style project board to organize workflows, track tasks, and collaborate smoothly with clean intuitive UI.
-              </p>
-              <div class="project-tags">
-                <span>React</span>
+                <span>React.js</span>
+                <span>TypeScript</span>
                 <span>Tailwind CSS</span>
-                <span>LocalStorage</span>
+                <span>Cloudflare Workers</span>
+                <span>D1 SQLite</span>
+                <span>Drizzle ORM</span>
               </div>
               <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Task Management App">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="URStamp">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Microcontroller Cocktail Vending Machine -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project4-zenith.svg" alt="Microcontroller Cocktail Vending Machine Thesis Project" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-award-badge iot"><i class="fa-solid fa-microchip"></i> Thesis Project &bull; IoT &amp; CAD</span>
+              <h3 class="project-title">Cocktail Vending Machine</h3>
+              <p class="project-desc">
+                Automated beverage dispensing system controlled by microcontrollers. Features interactive touchscreen selection, coin-acceptor payment, precision pump/valve dispensing, and AutoCAD structural drafting.
+              </p>
+              <div class="project-tags">
+                <span>Arduino UNO</span>
+                <span>Raspberry Pi</span>
+                <span>Python</span>
+                <span>Touchscreen</span>
+                <span>AutoCAD</span>
+                <span>Sensors</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Cocktail Vending Machine">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </a>
+                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: JA1 Antipolo Church Management System -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project2-aura.svg" alt="JA1 Antipolo Church Management System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-award-badge"><i class="fa-solid fa-church"></i> Full-Stack Web Platform</span>
+              <h3 class="project-title">JA1 Church Management</h3>
+              <p class="project-desc">
+                Comprehensive church website and management portal with role-based Admin &amp; Leader authentication, interactive event calendar, online member registration, ministry pages, and AI chatbot.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+                <span>AI Chatbot</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="JA1 Church Management">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </a>
+                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Mang Inasal Self-Ordering Kiosk System -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project3-pulse.svg" alt="Mang Inasal Self-Ordering Kiosk System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-award-badge"><i class="fa-solid fa-desktop"></i> Desktop Kiosk Application</span>
+              <h3 class="project-title">Self-Ordering Kiosk System</h3>
+              <p class="project-desc">
+                Interactive self-service customer kiosk application that enables diners to browse food menus, customize orders, and submit orders independently, paired with a back-office queue manager.
+              </p>
+              <div class="project-tags">
+                <span>VB.Net</span>
+                <span>Desktop UI</span>
+                <span>Database</span>
+                <span>Queue Management</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Self-Ordering Kiosk">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </a>
+                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Wooden Bizarre Management System -->
+          <div class="project-card glass-card">
+            <div class="project-media">
+              <img src="assets/images/project5-devsphere.svg" alt="Wooden Bizarre Management System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <span class="project-award-badge"><i class="fa-solid fa-briefcase"></i> Enterprise Management</span>
+              <h3 class="project-title">Wooden Bizarre System</h3>
+              <p class="project-desc">
+                Operations and business management system engineered with React and PostgreSQL for managing customer orders, staff directories, employee attendance tracking, and administrative records.
+              </p>
+              <div class="project-tags">
+                <span>React.js</span>
+                <span>PostgreSQL</span>
+                <span>REST APIs</span>
+                <span>Relational DB</span>
+              </div>
+              <div class="project-actions">
+                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Wooden Bizarre">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
+                </a>
+                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
                   <i class="fa-brands fa-github"></i> Code
                 </a>
               </div>
@@ -437,7 +877,15 @@
                   <div class="method-icon"><i class="fa-regular fa-envelope"></i></div>
                   <div>
                     <span class="method-label">Email</span>
-                    <a href="mailto:johncarl.loyola@example.com" class="method-value" id="email-address-text">johncarl.loyola@example.com</a>
+                    <a href="mailto:loyolajohncarl8@gmail.com" class="method-value" id="email-address-text">loyolajohncarl8@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="method-item">
+                  <div class="method-icon green"><i class="fa-solid fa-phone"></i></div>
+                  <div>
+                    <span class="method-label">Phone</span>
+                    <a href="tel:+639945851741" class="method-value">+63 994 585 1741</a>
                   </div>
                 </div>
 
@@ -445,7 +893,7 @@
                   <div class="method-icon cyan"><i class="fa-solid fa-location-dot"></i></div>
                   <div>
                     <span class="method-label">Location</span>
-                    <span class="method-value">Philippines</span>
+                    <span class="method-value">Antipolo, Rizal, Philippines</span>
                   </div>
                 </div>
               </div>
@@ -453,8 +901,10 @@
               <!-- Social Links -->
               <div class="contact-socials">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="mailto:johncarl.loyola@example.com" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="tel:+639945851741" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:loyolajohncarl8@gmail.com" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+                <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="social-icon" aria-label="Download Resume" title="Download Resume"><i class="fa-solid fa-file-arrow-down"></i></a>
               </div>
             </div>
 
