@@ -577,6 +577,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --------------------------------------------------------------------------
+  // Scroll Reveal Animations Observer
+  // --------------------------------------------------------------------------
+  const revealElements = document.querySelectorAll(
+    '.reveal-on-scroll, .reveal-fade-left, .reveal-fade-right, .reveal-scale-up'
+  );
+
+  if ('IntersectionObserver' in window && revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.12
+      }
+    );
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Instant/smooth reveal for elements already in viewport on load (e.g., hero)
+    setTimeout(() => {
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          el.classList.add('is-revealed');
+          revealObserver.unobserve(el);
+        }
+      });
+    }, 60);
+  } else {
+    // Fallback if IntersectionObserver is not supported
+    revealElements.forEach(el => el.classList.add('is-revealed'));
+  }
+
   // Current year in footer
   const yearEl = document.getElementById('current-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

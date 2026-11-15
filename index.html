@@ -48,9 +48,6 @@
 
       <!-- Nav Actions (Theme Toggle & Contact CTA) -->
       <div class="nav-actions">
-        <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-resume btn-sm nav-resume-cta" title="Download CV (PDF)">
-          <i class="fa-solid fa-download"></i> <span>CV</span>
-        </a>
 
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
           <i class="fa-solid fa-moon moon-icon"></i>
@@ -92,7 +89,7 @@
       <div class="container hero-container">
         
         <!-- Hero Text -->
-        <div class="hero-content">
+        <div class="hero-content reveal-fade-left">
 
           <h1 class="hero-title">
             Hi, I'm <span class="gradient-text">John Carl M. Loyola</span>
@@ -112,35 +109,15 @@
               <span>View Projects</span>
               <i class="fa-solid fa-arrow-down"></i>
             </a>
-            <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-resume" id="hero-download-resume" title="Download John Carl's Resume (PDF)">
-              <i class="fa-solid fa-file-arrow-down"></i>
-              <span>Download Resume</span>
-            </a>
             <a href="#contact" class="btn btn-secondary">
               <span>Contact Me</span>
               <i class="fa-regular fa-paper-plane"></i>
             </a>
           </div>
-
-          <!-- Social Links -->
-          <div class="hero-socials">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" title="linkedin.com/in/johncarlloyola">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="tel:+639945851741" class="social-icon" aria-label="Phone" title="+63 994 585 1741">
-              <i class="fa-solid fa-phone"></i>
-            </a>
-            <a href="mailto:loyolajohncarl8@gmail.com" class="social-icon" aria-label="Email Me" title="loyolajohncarl8@gmail.com">
-              <i class="fa-regular fa-envelope"></i>
-            </a>
-          </div>
         </div>
 
         <!-- Hero Interactive HUD Tracker (Follows mouse in N, S, E, W, NW, NE, SE, SW + Click to rotate 3 photos) -->
-        <div class="hero-visual">
+        <div class="hero-visual reveal-fade-right delay-2">
           <div class="hud-outer-wrapper">
             <div class="hud-portfolio-tag">PORTFOLIO — 2026</div>
 
@@ -221,12 +198,12 @@
     <section id="about" class="section about-section">
       <div class="container">
         
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
           <p class="section-subtitle">A brief introduction about who I am and what I do</p>
         </div>
 
-        <div class="about-card glass-card">
+        <div class="about-card glass-card reveal-scale-up">
           <div class="about-content">
             <div class="about-text">
               <h3 class="about-heading">Hello! I'm John Carl M. Loyola</h3>
@@ -236,63 +213,13 @@
               <p class="about-p">
                 I am committed to continuous learning, sharpening my algorithmic problem-solving, and collaborating closely with development teams to create software and embedded systems that genuinely solve user and organizational challenges.
               </p>
-
-              <!-- Quick Info Grid -->
-              <div class="about-specs-grid">
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-solid fa-user"></i> Name:</span>
-                  <span class="spec-val">John Carl M. Loyola</span>
-                </div>
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
-                  <span class="spec-val">Antipolo, Rizal, Philippines</span>
-                </div>
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-solid fa-phone"></i> Phone:</span>
-                  <a href="tel:+639945851741" class="spec-val spec-link">+63 994 585 1741</a>
-                </div>
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
-                  <span class="spec-val">BS Computer Engineering (Expected 2027)</span>
-                </div>
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-solid fa-envelope"></i> Email:</span>
-                  <a href="mailto:loyolajohncarl8@gmail.com" class="spec-val spec-link">loyolajohncarl8@gmail.com</a>
-                </div>
-                <div class="spec-item">
-                  <span class="spec-label"><i class="fa-brands fa-linkedin"></i> LinkedIn:</span>
-                  <a href="https://linkedin.com/in/johncarlloyola" target="_blank" rel="noopener noreferrer" class="spec-val spec-link">linkedin.com/in/johncarlloyola</a>
-                </div>
-              </div>
-
-              <!-- Resume Download Action Banner -->
-              <div class="about-resume-cta">
-                <div class="resume-cta-info">
-                  <div class="resume-cta-icon"><i class="fa-solid fa-file-pdf"></i></div>
-                  <div>
-                    <h4 class="resume-cta-title">Curriculum Vitae / Resume</h4>
-                    <p class="resume-cta-desc">Comprehensive CV with work experience, project awards, tech stack &amp; CAD drafting credentials.</p>
-                  </div>
-                </div>
-                <div class="resume-cta-actions">
-                  <a href="assets/docs/John_Carl_Loyola_Resume.pdf" download="John_Carl_Loyola_Resume.pdf" class="btn btn-primary btn-sm" title="Download Official PDF Resume">
-                    <i class="fa-solid fa-file-arrow-down"></i> Download PDF
-                  </a>
-                  <a href="assets/docs/John_Carl_Loyola_Resume.docx" download="John_Carl_Loyola_Resume.docx" class="btn btn-secondary btn-sm" title="Download Word Document">
-                    <i class="fa-solid fa-file-word"></i> Word (.docx)
-                  </a>
-                  <a href="resume.html" target="_blank" class="btn btn-secondary btn-sm" title="Open Clean Printable Resume Sheet">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Preview
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
         <!-- Educational Background Timeline Grid -->
         <div class="education-block">
-          <div class="education-header">
+          <div class="education-header reveal-on-scroll">
             <span class="edu-pill"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
             <h3 class="education-heading">Educational <span class="gradient-text">Background</span></h3>
             <p class="education-desc">From elementary foundations up to my current college studies</p>
@@ -300,7 +227,7 @@
 
           <div class="education-grid">
             <!-- 1. College (Current) -->
-            <div class="edu-card glass-card is-current">
+            <div class="edu-card glass-card is-current reveal-on-scroll delay-1">
               <div class="edu-card-top">
                 <span class="edu-tag tag-college"><i class="fa-solid fa-building-columns"></i> College / Tertiary</span>
                 <span class="edu-status-badge status-active"><span class="pulse-dot"></span> Currently In College</span>
@@ -314,7 +241,7 @@
             </div>
 
             <!-- 2. Senior High School (Graduated) -->
-            <div class="edu-card glass-card">
+            <div class="edu-card glass-card reveal-on-scroll delay-2">
               <div class="edu-card-top">
                 <span class="edu-tag"><i class="fa-solid fa-school"></i> Senior High School</span>
                 <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
@@ -328,7 +255,7 @@
             </div>
 
             <!-- 3. Junior High School (Graduated) -->
-            <div class="edu-card glass-card">
+            <div class="edu-card glass-card reveal-on-scroll delay-3">
               <div class="edu-card-top">
                 <span class="edu-tag"><i class="fa-solid fa-book-open"></i>Junior High School</span>
                 <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
@@ -342,7 +269,7 @@
             </div>
 
             <!-- 4. Elementary (Graduated) -->
-            <div class="edu-card glass-card">
+            <div class="edu-card glass-card reveal-on-scroll delay-4">
               <div class="edu-card-top">
                 <span class="edu-tag"><i class="fa-solid fa-children"></i> Elementary School</span>
                 <span class="edu-status-badge status-done"><i class="fa-solid fa-circle-check"></i> Graduated</span>
@@ -365,14 +292,14 @@
     <section id="skills" class="section skills-section">
       <div class="container">
         
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <span class="skills-eyebrow"><i class="fa-solid fa-microchip"></i> Capabilities &amp; Tech Stack</span>
           <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
           <p class="section-subtitle">Web development, computer engineering design, and modern production tools</p>
         </div>
 
         <!-- Category Filter Tabs -->
-        <div class="skills-filters" role="tablist" aria-label="Skills Category Filter">
+        <div class="skills-filters reveal-on-scroll delay-1" role="tablist" aria-label="Skills Category Filter">
           <button type="button" class="skills-filter-btn" data-filter="frontend" role="tab" aria-selected="false">
             <i class="fa-solid fa-laptop-code"></i> Frontend
           </button>
@@ -391,7 +318,7 @@
         </div>
 
         <!-- Initial Click Prompt (Hidden once a category is clicked) -->
-        <div class="skills-empty-state" id="skills-empty-state">
+        <div class="skills-empty-state reveal-scale-up delay-2" id="skills-empty-state">
           <div class="empty-icon-pulse">
             <i class="fa-solid fa-arrow-pointer"></i>
           </div>
@@ -695,7 +622,7 @@
     <section id="projects" class="section projects-section">
       <div class="container">
         
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
           <p class="section-subtitle">A showcase of some projects I've built</p>
         </div>
@@ -703,10 +630,7 @@
         <div class="projects-grid">
 
           <!-- Project 1: URStamp -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project1-nexus.svg" alt="URStamp Event and QR Attendance System" loading="lazy">
-            </div>
+          <div class="project-card glass-card reveal-scale-up delay-1">
             <div class="project-body">
               <span class="project-award-badge"><i class="fa-solid fa-trophy"></i> 1st Place &bull; System Making 2026</span>
               <h3 class="project-title">URStamp: QR Attendance System</h3>
@@ -721,22 +645,11 @@
                 <span>D1 SQLite</span>
                 <span>Drizzle ORM</span>
               </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="URStamp">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
-                </a>
-                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
             </div>
           </div>
 
           <!-- Project 2: Microcontroller Cocktail Vending Machine -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project4-zenith.svg" alt="Microcontroller Cocktail Vending Machine Thesis Project" loading="lazy">
-            </div>
+          <div class="project-card glass-card reveal-scale-up delay-2">
             <div class="project-body">
               <span class="project-award-badge iot"><i class="fa-solid fa-microchip"></i> Thesis Project &bull; IoT &amp; CAD</span>
               <h3 class="project-title">Cocktail Vending Machine</h3>
@@ -751,22 +664,11 @@
                 <span>AutoCAD</span>
                 <span>Sensors</span>
               </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Cocktail Vending Machine">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
-                </a>
-                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
             </div>
           </div>
 
           <!-- Project 3: JA1 Antipolo Church Management System -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project2-aura.svg" alt="JA1 Antipolo Church Management System" loading="lazy">
-            </div>
+          <div class="project-card glass-card reveal-scale-up delay-3">
             <div class="project-body">
               <span class="project-award-badge"><i class="fa-solid fa-church"></i> Full-Stack Web Platform</span>
               <h3 class="project-title">JA1 Church Management</h3>
@@ -780,22 +682,11 @@
                 <span>Firebase</span>
                 <span>AI Chatbot</span>
               </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="JA1 Church Management">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
-                </a>
-                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
             </div>
           </div>
 
           <!-- Project 4: Mang Inasal Self-Ordering Kiosk System -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project3-pulse.svg" alt="Mang Inasal Self-Ordering Kiosk System" loading="lazy">
-            </div>
+          <div class="project-card glass-card reveal-scale-up delay-4">
             <div class="project-body">
               <span class="project-award-badge"><i class="fa-solid fa-desktop"></i> Desktop Kiosk Application</span>
               <h3 class="project-title">Self-Ordering Kiosk System</h3>
@@ -808,22 +699,11 @@
                 <span>Database</span>
                 <span>Queue Management</span>
               </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Self-Ordering Kiosk">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
-                </a>
-                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
-              </div>
             </div>
           </div>
 
           <!-- Project 5: Wooden Bizarre Management System -->
-          <div class="project-card glass-card">
-            <div class="project-media">
-              <img src="assets/images/project5-devsphere.svg" alt="Wooden Bizarre Management System" loading="lazy">
-            </div>
+          <div class="project-card glass-card reveal-scale-up delay-5">
             <div class="project-body">
               <span class="project-award-badge"><i class="fa-solid fa-briefcase"></i> Enterprise Management</span>
               <h3 class="project-title">Wooden Bizarre System</h3>
@@ -835,14 +715,6 @@
                 <span>PostgreSQL</span>
                 <span>REST APIs</span>
                 <span>Relational DB</span>
-              </div>
-              <div class="project-actions">
-                <a href="#projects" class="btn btn-sm btn-primary project-btn" data-project="Wooden Bizarre">
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Overview
-                </a>
-                <a href="https://github.com/johncarlloyola" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
-                  <i class="fa-brands fa-github"></i> Code
-                </a>
               </div>
             </div>
           </div>
@@ -857,16 +729,16 @@
     <section id="contact" class="section contact-section">
       <div class="container">
         
-        <div class="section-header">
+        <div class="section-header reveal-on-scroll">
           <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
           <p class="section-subtitle">Have a question or want to work together? Send me a message!</p>
         </div>
 
-        <div class="contact-card glass-card">
+        <div class="contact-card glass-card reveal-scale-up">
           <div class="contact-grid">
             
             <!-- Contact Info -->
-            <div class="contact-info">
+            <div class="contact-info reveal-fade-left delay-1">
               <h3 class="contact-subtitle">Contact Information</h3>
               <p class="contact-text">
                 Feel free to reach out via email or send a message using the form. I'll get back to you as soon as possible!
@@ -909,7 +781,7 @@
             </div>
 
             <!-- Simple Contact Form -->
-            <form id="contact-form" class="contact-form" novalidate>
+            <form id="contact-form" class="contact-form reveal-fade-right delay-2" novalidate>
               <div class="form-group">
                 <label for="form-name" class="form-label">Your Name</label>
                 <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Maria Santos" required>
